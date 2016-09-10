@@ -1,0 +1,12 @@
+turn off or reboot : sudo shutdown -h/r now
+add user : sudo useradd -m -G sudoGroup tester
++ set password : sudo passwd tester
+= sudo adduser tester
+delete user : sudo userdel tester | ls /home | sudo rm -rf /home/tester
+check sudo permission : sudo cat /etc/sudoers
+change user : su - tester
+check group : groups
+change user info : sudo usermod -a -G sudo tester
+
+
+
