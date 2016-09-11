@@ -1,4 +1,10 @@
-turn off or reboot : sudo shutdown -h/r now
+user name : tester
+file name : sample
+directory name : sampleDir
+
+turn off or reboot : sudo shutdown -h//r now
+
+user
 add user : sudo useradd -m -G sudoGroup tester
 + set password : sudo passwd tester
 = sudo adduser tester
@@ -7,6 +13,29 @@ check sudo permission : sudo cat /etc/sudoers
 change user : su - tester
 check group : groups
 change user info : sudo usermod -a -G sudo tester
+
+file
+get file list : ls -al 
+	-> ls result detail : permission link owner group size lastModified name
+		-> permission detail : d//- userPermission groupPermission other'sPermission on r(read), w(write), x(excute) and -(not allowed)
+change owner/group : sudo chown -R tester:testerGroup sample
+change permission : chmod ugo//a+//-rwx sample
+	-> using number : chmod 444 sample - all only read, 222 - all only write, 111 - all only excute, 777 = a+rwx, 644 = default permission
+where am I : pwd
+make directory: mkdir -p sampleDir/childDir
+change directory: cd sampleDir
+delete directory: rm -rf sampleDir
+make empty file or update last modified time : touch sample
+copy file : cp -r source target
+move file : mv sorce... target
+delete file : rm sample...
+show file content : * less sample // cat sample // more sample
+	-> less action : f, b, enter, q, g, G, /search, n, N
+show file from first : head -n 20 sample
+show file from last : tail -n 20 -f sample
+
+
+
 
 
 
