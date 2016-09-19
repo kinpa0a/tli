@@ -1,1 +1,6 @@
-https://www.4clojure.com/problem/97
+https://www.4clojure.com
+
+problem 97
+
+**problem 95 - To Tree, or not to Tree**
+(fn treeChecker [x] (if (coll? x) (if (= 3 (count x)) (and (treeChecker (second x)) (treeChecker (last x))) false) (nil? x)))
