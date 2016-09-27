@@ -33,25 +33,34 @@ show file content : * less sample // cat sample // more sample
 	-> less action : f, b, enter, q, g, G, /search, n, N
 show file from first : head -n 20 sample
 show file from last : tail -n 20 -f sample
-search file : sudo find . -type f -name sample (in mac, not working without path)
+search file : sudo find . -type f -name sample (for mac, not working without path)
 	-> using regex : a*b, a?b(one), [A,B,C]_test, [0-9], [A-C]
 search file content : grep -c(count)//-n(line number) -i(ignore case) keyword target
 	-> using pipeline : ls -al | grep sample
 
 process
-check process with resource usage : top + N//M//T//P
-	-> focusing on each process : ps -aux (in mac, not working with - : http://stackoverflow.com/questions/15102576/ps-aux-works-but-ps-aux-doesnt)
+check process with resource usage : top N//M//T//P
+	-> focusing on each process : ps -aux (for mac, not working with - : http://stackoverflow.com/questions/15102576/ps-aux-works-but-ps-aux-doesnt)
 		-> process STAT : check it using man ps
 check process sorted by pid with ppid : ps -ef
 stop process forcely : kill -9 pid
 run process in background : command &
 
 
-
-
-
-
-
+network
+check network interface status : ifconfig 
+	-> lo(loopback interface), eth0(wire), wlan0(wireless) 
+	-> HWaddr(MAC Address), inet addr(ip), MTU(Maxium Transfet Unit), RX(Recieve), TX(Send)
+stop network interface(reset when reboot) : sudo ifconfig networkInterface down
+start network interface(reset when reboot) : sudo ifconfig networkInterface ipAddress up
+show routing table : route(for mac, netstat -nr)
+add default gateway : sudo route add default gw gatewayAddr
+	-> ? how the routing works
+check network connetcion : ping -i 10 -t 10 -R ip//domainAddr
+	-> ttl : Time To Live
+	-> checking order : gw -> internal host -> dns server -> external host
+check network status : netstat -atp (for mac, netstat -atp tcp//udp//..)
+	-> for network interface : -i, for statistics : -s
 
 
 
