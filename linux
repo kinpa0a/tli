@@ -63,4 +63,26 @@ check network status : netstat -atp (for mac, netstat -atp tcp//udp//..)
 	-> for network interface : -i, for statistics : -s
 
 
+bash
+check version : bash --version
+start with : #! /bin/bash
+assign executable permission : sudo chmod +x scriptFile
+to execute everywhere : sudo cp scriptFile /usr/local/bin
+use variable : varName=varValue => $varName
+	-> no space before and after =
+set variable via parameter with default value : varName=${nthParam:-defaultValue}
+show date format : `date +%y%m%d`
+use condition : 
+	if [ condition ] -> space between []
+		then
+			trueLogic
+			exit 1
+		else
+			falseLogic
+		fi
+
+	logic
+	
+	exit 0 -> ? necessary?
+
 
