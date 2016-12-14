@@ -1,8 +1,11 @@
 Seven Concurrency Models In Seven Weeks
 
-여기서 분명히 동시성 관련된 이야기를 봤었는데 기억이..정리 다시..
+동시성 : 여러가지 일을 한꺼번에 실행 (논리 흐름의 여러개)
+병렬성 : 일을 동시에 실행 (여러 실행 주체)
+
 1. Thread
 - Race Condition : the behavior of an electronic, software or other system where the output is dependent on the sequence or timing of other uncontrollable events. It becomes a bug when events do not happen in the order the programmer intended. The term originates with the idea of two signals racing each other to influence the output first.
+> 쓰레드의 실행 순서를 통제할 수 없음!
 - Memore Visibility : 한 Thread에서 변경한 특정 메모리의 값이, 다른 Thread에서 제대로 읽어지는지
 - Deadlock : In concurrent computing, a deadlock occurs when two competing actions wait for the other to finish, and thus neither ever does.
 reference => http://www.cs.umd.edu/~pugh/java/memoryModel/index.html#additional
