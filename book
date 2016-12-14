@@ -1,5 +1,6 @@
 Seven Concurrency Models In Seven Weeks
 
+여기서 분명히 동시성 관련된 이야기를 봤었는데 기억이..정리 다시..
 1. Thread
 - Race Condition : the behavior of an electronic, software or other system where the output is dependent on the sequence or timing of other uncontrollable events. It becomes a bug when events do not happen in the order the programmer intended. The term originates with the idea of two signals racing each other to influence the output first.
 - Memore Visibility : 한 Thread에서 변경한 특정 메모리의 값이, 다른 Thread에서 제대로 읽어지는지
