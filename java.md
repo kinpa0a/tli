@@ -40,3 +40,19 @@ double d2 = 123.4F;
 
 
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html
+
+* Sorting an array into ascending order. This can be done either sequentially, using the sort method, or concurrently, using the parallelSort method introduced in Java SE 8. Parallel sorting of large arrays on multiprocessor systems is faster than sequential array sorting.
+  * http://stackoverflow.com/questions/17328077/difference-between-arrays-sort-and-arrays-parallelsort : 정확히 이해는 안됨
+* (Good!) Becoming familiar with common compiler errors will make it easier to recognize bugs in your code.
+
+
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+
+* The code result++; and ++result; will both end in result being incremented by one. The only difference is that the prefix version (++result) evaluates to the incremented value, whereas the postfix version (result++) evaluates to the original value.
+  * 이렇게 적어놓고 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html <- 여기에 있는 표에는 postfix가 제일 우선 순위가 높다고 나와 있어서 헷갈렸다. 같은 줄에 있을 때 postfix가 prefix보다 먼저 연산된다는 의미가 아니라 expression을 평가(evaluation)하는 시점 기준으로 이전에 특정 변수에 postfix로 ++나 --가 붙어 있을 경우 먼저 연산이 일어난다는 의미인 것 같다.
+* (?? negates an expression) The Unary Operator "-" : Unary minus operator; negates an expression
+* The instanceof operator compares an object to a specified type. You can use it to test if an object is an instance of a class, an instance of a subclass, or an instance of a class that implements a particular interface.
+* null is not an instance of anything
+* (?? 비트연산 잘 모르겠다) The unsigned right shift operator ">>>" shifts a zero into the leftmost position, while the leftmost position after ">>" depends on sign extension.
+
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/expressions.html
