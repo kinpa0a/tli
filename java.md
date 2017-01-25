@@ -97,3 +97,31 @@ else System.out.println("second string");
 System.out.println("third string"); 
 
 * to make the control flow easier to understand : spaces, line breaks and braces.
+
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html
+
+* Two of the components of a method declaration comprise the method signature—the method's name and the parameter types.
+* The compiler does not consider return type when differentiating methods, so you cannot declare two methods with the same signature even if they have a different return type.
+* Overloaded methods should be used sparingly, as they can make code much less readable.
+ * 가능하면 메서드 오버로딩을 하지 말라고 한다!
+* new Bicycle(30, 0, 8) creates space in memory for the object and initializes its fields.
+* This default constructor will call the no-argument constructor of the superclass.
+ 
+ https://docs.oracle.com/javase/tutorial/java/javaOO/object.html
+ 
+ * Parameters refers to the list of variables in a method declaration. Arguments are the actual values that are passed in when the method is invoked. 
+ * If you want to pass a method into a method, then use a lambda expression or a method reference.
+ * You can use a construct called varargs to pass an arbitrary number of values to a method.
+  * To use varargs, you follow the type of the last parameter by an ellipsis (three dots, ...), then a space, and the parameter name. The method can then be called with any number of that parameter, including none.
+  * The method can be called either with an array or with a sequence of arguments.
+ * A parameter can have the same name as one of the class's fields. If this is the case, the parameter is said to shadow the field. Shadowing fields can make your code difficult to read and is conventionally used only within constructors and methods that set a particular field. 
+* Primitive arguments, such as an int or a double, are passed into methods by value.
+* Reference data type parameters, such as objects, are also passed into methods by value. 
+ * (!!!) 하지만 그 "값"이 주소값이기 때문에 primitive type parameter와 특성이 달라진다
+* (??? 이해안됨) Once an object has completed the work for which it was created, its resources are recycled for use by other objects.
+* With a primitive variable, this declaration also reserves the proper amount of memory for the variable.
+* The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory. The new operator also invokes the object constructor.
+* The phrase "instantiating a class" means the same thing as "creating an object." When you create an object, you are creating an "instance" of a class, therefore "instantiating" a class.
+* The Java compiler differentiates the constructors based on the number and the type of the arguments. 
+* initialize라는 용어는 언제 쓰이는가?
