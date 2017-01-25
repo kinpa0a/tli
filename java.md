@@ -56,3 +56,44 @@ https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
 * (?? 비트연산 잘 모르겠다) The unsigned right shift operator ">>>" shifts a zero into the leftmost position, while the leftmost position after ">>" depends on sign extension.
 
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/expressions.html
+
+An *expression* is a construct made up of variables, operators, and method invocations that evaluates to a single value.
+A *statement* forms a complete unit of execution.
+A *block* is a group of zero or more statements between balanced braces.
+
+* state의 개념이 매우 모호하다.
+
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html
+
+* Deciding when to omit the braces is a matter of personal taste. Omitting them can make the code more brittle.
+ * = 안써도 되긴한데 헷갈릴거야(?)
+* if state - Once a condition is satisfied, the appropriate statements are executed and the remaining conditions are not evaluated.
+* the switch statement can have a number of possible execution paths. 
+* possible switch expression : with the byte, short, char, int, Enum Types, String, Character, Byte, Short, and Integer
+* A statement in the switch block can be labeled with one or *more* case or default labels.
+* An if-then-else statement can test expressions based on ranges of values or conditions, whereas a switch statement tests expressions based only on a single integer, enumerated value, or String object.
+*  Each break statement terminates the enclosing switch statement. Control flow continues with the first statement following the switch block.
+* Ensure that the expression in any switch statement is not null to prevent a NullPointerException from being thrown.
+
+* (???) switch state 설명할 때 expreission, state, block 등등 다양한 용어를 쓰는데 다른 control flow state 설명할 때와는 다르게 처음에 저런 용어들을 이용해서 포맷을 설명해주지 않아서 무엇을 가르키는지 한참 헤맸다. 
+ * ex) 
+ while (expression) {
+      statement(s)
+ }
+
+* If the variable that controls a for statement is not needed outside of the loop, it's best to declare the variable in the initialization expression. The names i, j, and k are often used to control for loops; declaring them within the initialization expression limits their life span and reduces errors. 
+* We recommend using this form[for (type element : array)] of the for statement instead of the general form whenever possible.
+* The break statement has two forms: labeled and unlabeled.
+ * break문에 label 있다는 사실을 처음 알았다! continue에도 있다!
+* An unlabeled break statement terminates the innermost.
+* A labeled break terminates the outer.
+* You can use an unlabeled break to terminate a switch, or, while, or do-while loop.
+
+* (???) 아래 구문의 흐름을 완전 잘못 읽어냈다. else는 가장 가까운(?) if문에 연결되는구나!
+if (aNumber >= 0)
+    if (aNumber == 0)
+        System.out.println("first string");
+else System.out.println("second string");
+System.out.println("third string"); 
+
+* to make the control flow easier to understand : spaces, line breaks and braces.
