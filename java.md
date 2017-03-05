@@ -35,3 +35,16 @@
 처음에 자바를 공부할 때 이정도는 너무 어렵다고 생각했거나 아직 여기를 볼 차례가 아니야 하고 가볍게 넘겼던 부분들이 낯설다. 반대로 알게되는 것(?)도 더 많다. 몰랐던 것이 많았던 탓이다. 지금까지는 nested class, enum, annotation 정도.
 
 <https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html>
+
+한글로 쓰면 자꾸 깨져서 엉망진창 영어로..나중에 내가 이걸 읽고 이해할 수 있을지는 모르겠다.
+
+Long time no see!
+
+https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
+not mean that not use runtime exception but don't use it with an intention to avoid handing it
+if then, it means no need to handle it with catch or specify anymore but handle it at the one point(ex. exception handling) when I throw a common sometimes custom runtime exception in a catch clause
+
+```
+Generally speaking, do not throw a RuntimeException or create a subclass of RuntimeException simply because you don't want to be bothered with specifying the exceptions your methods can throw.
+```
+
