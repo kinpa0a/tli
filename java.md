@@ -48,3 +48,4 @@ if then, it means no need to handle it with catch or specify anymore but handle 
 Generally speaking, do not throw a RuntimeException or create a subclass of RuntimeException simply because you don't want to be bothered with specifying the exceptions your methods can throw.
 ```
 
+try -> try with resources -> catch -> finally 
