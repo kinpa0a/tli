@@ -40,7 +40,7 @@
 
 Long time no see!
 
-https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
+<https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html>
 not mean that not use runtime exception but don't use it with an intention to avoid handing it
 if then, it means no need to handle it with catch or specify anymore but handle it at the one point(ex. exception handling) when I throw a common sometimes custom runtime exception in a catch clause
 
@@ -49,3 +49,6 @@ Generally speaking, do not throw a RuntimeException or create a subclass of Runt
 ```
 
 try -> try with resources -> catch -> finally 
+
+<https://docs.oracle.com/javase/tutorial/essential/io/index.html>
+file io에 대한 인터페이스가 일관성이 부족하다는 느낌을 받는다. 그리고 결국 os에 직접 무엇을 하는게 아니라 어플리케이션이라는 하나의 레이어가 있는 것이라 동작이 완벽하지 않다. os 디펜던시도 심하다. 조심히 써야할 것 같다.
