@@ -51,7 +51,15 @@ Generally speaking, do not throw a RuntimeException or create a subclass of Runt
 try -> try with resources -> catch -> finally 
 
 <https://docs.oracle.com/javase/tutorial/essential/io/index.html>
+
 file io에 대한 인터페이스가 일관성이 부족하다는 느낌을 받는다. 그리고 결국 os에 직접 무엇을 하는게 아니라 어플리케이션이라는 하나의 레이어가 있는 것이라 동작이 완벽하지 않다. os 디펜던시도 심하다. 조심히 써야할 것 같다.
 
 <https://docs.oracle.com/javase/tutorial/essential/io/notification.html>
+
 java에 별 클래스가 다 있구나. 제대로 모르고 쓰는구나. 근데 이런 라이브러리들은 대부분 날 것 같아서(네이티브 코드?를 래핑한 건데도) 보통은 한 번 더 래핑한 외부의 커스텀 라이브러리를 갖다 쓰게 되는 것 같다. 라이브러리를 제공하는 입장이 아니라면 사실 잘 모를지도?
+
+
+It took me too long to read and understand java tutorial up to file io.
+I've learned that I don't need to focus on each words or setences of a documen considered as a "reference".
+Read fast even though I couldn't remember all. Because I might forget almost every things that I've read.
+What I really remember is where the information is or what kinds of topics I can find from it.
