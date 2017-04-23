@@ -63,3 +63,18 @@ It took me too long to read and understand java tutorial up to file io.
 I've learned that I don't need to focus on each words or setences of a documen considered as a "reference".
 Read fast even though I couldn't remember all. Because I might forget almost every things that I've read.
 What I really remember is where the information is or what kinds of topics I can find from it.
+
+
+<https://docs.oracle.com/javase/tutorial/>
+```
+Trails Covering the Basics
+
+These trails are available in book form as The Java Tutorial, Sixth Edition. To buy this book, refer to the box to the right.
+Getting Started — An introduction to Java technology and lessons on installing Java development software and using it to create a simple program.
+Learning the Java Language — Lessons describing the essential concepts and features of the Java Programming Language.
+Essential Java Classes — Lessons on exceptions, basic input/output, concurrency, regular expressions, and the platform environment.
+Collections — Lessons on using and extending the Java Collections Framework.
+Date-Time APIs — How to use the java.time pages to write date and time code.
+```
+
+한 번 다 훑었다!
