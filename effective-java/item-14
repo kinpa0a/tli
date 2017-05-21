@@ -1,0 +1,6 @@
+* Accessibility Between Nested Classes And Enclosing Classes
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+
+Nested Classes: Nested Classes are the member of Enclosing Class.
+- Static Nested Classes : Class Member
+- Inner Classes : Instance Member
